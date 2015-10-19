@@ -1,7 +1,11 @@
 # General Routines
 This repository will contain scripts for general data processing of single particle cryo-electron microscopy (cryo-EM) data sets.
 
-## Extracting particles into a single stack using makeStack.py
+*Table of contents*
+1. Extracting particles using makeStack.py
+2. Estimating CTF using CTFFIN3 and CTFTILT
+
+## Extracting particles using makeStack.py
 
 ###Inputs
 
@@ -66,17 +70,17 @@ Options:
 To extract particles from your micrographs without phase flipping or extracting tilt mates for OTR/RCT, you just need to specify the path to the micrographs and provide an output stack name. **NOTE** The box files are assumed to be the same name as the micrograph names.
 
 ```
-/data/Scripts/makeStack.py --micros='*en.mrc' -o outputstack.img
+$ /General_routines/makeStack.py --micros='*en.mrc' -o outputstack.img
 ```
 
-###Extracting particles WITH phase flipping
+####Extracting particles WITH phase flipping
 
 To extract particles from phase flipped micrographs, you can execute this command, specifying *--phaseflip* and providing the *ctf_param.txt* file, which is the output from *estimateCTF_CTFFIND.py*:
 
 ```
-/data/Scripts/makeStack.py --micros='*en.mrc' -o outputstack.img --phaseflip --ctf=ctf_param.txt
+$ /General_routines/makeStack.py --micros='*en.mrc' -o outputstack.img --phaseflip --ctf=ctf_param.txt
 ```
 
-###Extracting RCT/OTR tilt mates
+####Extracting RCT/OTR tilt mates
 
 *work in progress*
