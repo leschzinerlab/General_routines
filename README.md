@@ -37,7 +37,7 @@ Input options for the program are displayed by running the program without any o
 
 ```
 $ /General_routines/makeStack.py
-Usage: makeStack.py --micros=<micrographs> --box=<boxfiles> -o <output stack name.img>
+Usage: makeStack.py --micros=<micrographs> -o <output stack name.img>
 
 Options:
   -h, --help       show this help message and exit
@@ -46,11 +46,12 @@ Options:
   -o FILE          Output stack name (.img). If tilt mates, do not provide
                    .img extension, output stack name will be the base name for
                    tilted and untilted particles.
-  --bin=INT        Optional: Binning factor used during boxer picking
-                   (Default=1)
-  --invert         Invert contrast of micrographs
-  --boxsize=INT    Optional: box size for final stack. (Default is size used
+  --bin=INT        Binning factor used during boxer picking (Default=1)
+  --invert         Optional: Invert contrast of micrographs
+  --boxsize=INT    Optional: Box size for final stack. (Default is size used
                    in boxer picking)
+  --binstack=INT   Optional: Binning for final extracted particle stack.
+                   (Default=1)
   --phaseflip      Flag to phase flip particles
   --ctf=STRING     If phase-flipping - ctf_param.txt output file from
                    estimateCTF_CTFFIND.py if not using tilt mates
