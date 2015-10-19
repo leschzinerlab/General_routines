@@ -15,5 +15,21 @@ Typically users can pick particles using *boxer* from EMAN1.9 or *e2boxer.py* fr
 
 ####Estimating the CTF
 
+Below, users have the option to extract 1) phase flipped particles or 2) RCT/OTR particle pairs. For either of these processing outputs, you will need to run:
 
-###Outputs
+1) phase flipping: CTFFIND3 --> [estimateCTF_CTFFIND3.py] (https://github.com/leschzinerlab/FREALIGN/tree/master/ctffind_ctftilt)
+
+2) RCT/OTR: CTFTILT --> [estimateCTF_CTFTILT.py] (https://github.com/leschzinerlab/FREALIGN/tree/master/ctffind_ctftilt)
+
+These programs will output text files with CTF and tilt information.
+
+###Running the program: extracting raw particles (no phase flipping)
+
+```
+/data/Scripts/makeStack.py --micros='*en.mrc' -o outputstack.img
+```
+
+###Running the program: exacting particles WITH phase flipping
+
+
+###Running the program: exacting RCT/OTR tilt mates
