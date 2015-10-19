@@ -2,8 +2,8 @@
 This repository will contain scripts for general data processing of single particle cryo-electron microscopy (cryo-EM) data sets.
 
 *Table of contents*
-1. [Extracting particles using makeStack.py](https://github.com/leschzinerlab/General_routines#extracting-particles-using-makestackpy)\n
-2. Estimating CTF using CTFFIN3 and CTFTILT\n
+- [Extracting particles using makeStack.py](https://github.com/leschzinerlab/General_routines#extracting-particles-using-makestackpy)
+- Estimating CTF using CTFFIN3 and CTFTILT
 
 ## Extracting particles using makeStack.py
 
