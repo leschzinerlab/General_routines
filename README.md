@@ -3,6 +3,7 @@ This repository will contain scripts for general data processing of single parti
 
 *Table of contents*
 - [Convert .mrc dm3 files to .mrc (bash script)](https://github.com/leschzinerlab/General_routines#convert-mrc-dm3-files-to-mrc-bash-script)
+- [Convert .mrc stack to individual 2D .mrc images](https://github.com/leschzinerlab/General_routines#convert-.mrc-stack-to-individual-2D-.mrc-images)
 - [Extracting particles using makeStack.py](https://github.com/leschzinerlab/General_routines#extracting-particles-using-makestackpy)
 - Estimating CTF using CTFFIND3 and CTFTILT
 
@@ -11,6 +12,18 @@ This repository will contain scripts for general data processing of single parti
 A quick bash script that will convert all micrographs in a given folder that a .dm3 into .mrc format.
 
 <pre>./convert_all_dm3_to_mrc.csh</pre>
+
+## Convert .mrc stack to individual 2D .mrc images
+
+To convert a stack of mrc images into single 2D mrc images. This is helpful for dealing with stacks from from SerialEM or any other stack of .mrc images.
+
+<pre>$  General_routines/mrc_stack_to_2Dimages.py
+Usage: mrc_stack_to_2Dimages.py -i [stack]
+
+Options:
+  -h, --help  show this help message and exit
+  -i FILE     Input .mrc stack
+  -d          debug</pre>
 
 ## Extracting particles using makeStack.py
 
