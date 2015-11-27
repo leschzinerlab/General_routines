@@ -2,8 +2,15 @@
 This repository will contain scripts for general data processing of single particle cryo-electron microscopy (cryo-EM) data sets.
 
 *Table of contents*
+- [Convert .mrc dm3 files to .mrc (bash script)]
 - [Extracting particles using makeStack.py](https://github.com/leschzinerlab/General_routines#extracting-particles-using-makestackpy)
-- Estimating CTF using CTFFIN3 and CTFTILT
+- Estimating CTF using CTFFIND3 and CTFTILT
+
+## Convert .mrc dm3 files to .mrc (bash script)
+
+A quick bash script that will convert all micrographs in a given folder that a .dm3 into .mrc format.
+
+<pre>./convert_all_dm3_to_mrc.csh</pre>
 
 ## Extracting particles using makeStack.py
 
