@@ -3,7 +3,7 @@ This repository will contain scripts for general data processing of single parti
 
 *Table of contents*
 - [Convert .mrc dm3 files to .mrc (bash script)](https://github.com/leschzinerlab/General_routines#convert-mrc-dm3-files-to-mrc-bash-script)
-- [Convert .mrc stack to individual 2D .mrc images](https://github.com/leschzinerlab/General_routines#convert-.mrc-stack-to-individual-2D-.mrc-images)
+- [Convert .mrc stack to individual 2D .mrc images](https://github.com/leschzinerlab/General_routines#convert-mrc-stack-to-individual-2d-mrc-images)
 - [Extracting particles using makeStack.py](https://github.com/leschzinerlab/General_routines#extracting-particles-using-makestackpy)
 - Estimating CTF using CTFFIND3 and CTFTILT
 
